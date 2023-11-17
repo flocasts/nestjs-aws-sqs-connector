@@ -2,7 +2,8 @@
   "name": "@flocasts/nestjs-aws-sqs-connector",
   "version": "0.0.1",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "dist/index.js",
+  "types": "dist/index.js.ts",
   "engines": {
     "node": ">=16.10 <=20"
   },
