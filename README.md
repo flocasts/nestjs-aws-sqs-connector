@@ -17,7 +17,6 @@ $ npm start
 ```bash
 $ npm add -S @flocast/nestjs-aws-sqs-connector 
 
-flocasts/nestjs-aws-sqs-connector
 ```
 
 ### Import the module in the app.module.ts
