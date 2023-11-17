@@ -8,6 +8,11 @@ on:
     push:
         tags:
             - 'v*.*.*'
+    workflow_dispatch:
+        inputs:
+          tag:
+            description: 'Tag'
+            required: true
 
 jobs:
     publish:
@@ -28,8 +33,6 @@ jobs:
 
             - name: Install dependencies
               run: npm ci
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.FLO_DEPLOY_PAT }}
 
             - name: Update package.json version
               run: npm run update-version ${{ github.ref_name }}
