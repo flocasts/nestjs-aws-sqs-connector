@@ -1,5 +1,5 @@
 {
-  "name": "@flosportsinc/nestjs-aws-sqs-connector",
+  "name": "@flocasts/nestjs-aws-sqs-connector",
   "version": "0.0.1",
   "description": "",
   "main": ".eslintrc.js",
