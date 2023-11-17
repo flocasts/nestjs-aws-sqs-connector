@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": ".eslintrc.js",
+  "engines": {
+    "node": ">=16.10 <=20"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
