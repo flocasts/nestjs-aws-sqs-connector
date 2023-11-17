@@ -15,7 +15,7 @@ $ npm start
 ### Add the library to a project
 
 ```bash
-$ npm add -S @flocast/nestjs-aws-sqs-connector 
+$ npm add -S @flocasts/nestjs-aws-sqs-connector 
 
 ```
 
