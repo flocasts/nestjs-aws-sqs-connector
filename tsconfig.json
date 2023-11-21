@@ -16,7 +16,7 @@
       "skipLibCheck": true,
       "baseUrl": "./"
     },
-    "include": ["lib", "e2e"],
+    "include": ["lib/**/*.ts"],
     "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
   }
   

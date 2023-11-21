@@ -8,7 +8,9 @@
     "node": ">=16.10 <=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "package": "npm pack"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/flocasts/nestjs-aws-sqs-connector#readme",
   "dependencies": {
+    "@aws-sdk/client-sqs": "^3.451.0",
     "@ssut/nestjs-sqs": "^2.2.0"
   },
   "devDependencies": {
