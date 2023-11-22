@@ -2,12 +2,15 @@
   "name": "@flocasts/nestjs-aws-sqs-connector",
   "version": "0.0.1",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "dist/index.js",
+  "types": "dist/index.js.ts",
   "engines": {
     "node": ">=16.10 <=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "package": "npm pack"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/flocasts/nestjs-aws-sqs-connector#readme",
   "dependencies": {
+    "@aws-sdk/client-sqs": "^3.451.0",
     "@ssut/nestjs-sqs": "^2.2.0"
   },
   "devDependencies": {
