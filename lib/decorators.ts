@@ -1,3 +1,1 @@
-import { SqsMessageHandler } from '@ssut/nestjs-sqs';
-
-export type { SqsMessageHandler };
+export { SqsMessageHandler } from '@ssut/nestjs-sqs';

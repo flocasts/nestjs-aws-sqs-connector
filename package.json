@@ -1,6 +1,6 @@
 {
   "name": "@flocasts/nestjs-aws-sqs-connector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.js.ts",
@@ -8,7 +8,7 @@
     "node": ">=16.10 <=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "npx tsc",
     "test": "jest",
     "package": "npm pack"
   },
@@ -40,7 +40,7 @@
     "ts-jest": "^27.1.5",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^3.14.2",
-    "typescript": "^4.9.5",
+    "typescript": "^5.3.2",
     "wait-for-expect": "^3.0.2"
   }
 }

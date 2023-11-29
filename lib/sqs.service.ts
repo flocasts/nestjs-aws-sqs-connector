@@ -13,19 +13,19 @@ export class SqsService {
     receiptHandle: string,
   ): Promise<void> {
     try {
-      await this.sqsClient.deleteMessage({
-        QueueUrl: queueUrl,
-        ReceiptHandle: receiptHandle,
-      });
-    } catch (error) {
       if (this.sqsClient === undefined) {
         throw new Error(
           'SQS client not configured. Call configure method first.',
         );
       } else {
-        console.error('Error deleting message:', error);
-        throw error;
+        await this.sqsClient.deleteMessage({
+          QueueUrl: queueUrl,
+          ReceiptHandle: receiptHandle,
+        });
       }
+    } catch (error) {
+      console.error('Error deleting message:', error);
+      throw error;
     }
   }
 }
