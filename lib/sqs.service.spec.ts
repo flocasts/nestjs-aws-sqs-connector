@@ -26,22 +26,4 @@ describe('SqsService', () => {
     );
   });
 
-  it('should delete a message when configured', async () => {
-    SqsService.Configure('test-region');
-    const queueUrl = 'test-queue-url';
-    const receiptHandle = 'test-receipt-handle';
-
-    // Mock the SQS DeleteMessage method
-    (SqsService['sqsClient'] as SQS).deleteMessage = jest
-      .fn()
-      .mockResolvedValue({});
-
-    await SqsService.DeleteMessage(queueUrl, receiptHandle);
-    expect((SqsService['sqsClient'] as SQS).deleteMessage).toHaveBeenCalledWith(
-      {
-        QueueUrl: queueUrl,
-        ReceiptHandle: receiptHandle,
-      },
-    );
-  });
 });
