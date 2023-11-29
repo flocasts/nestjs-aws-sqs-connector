@@ -1,6 +1,6 @@
 {
   "name": "@flocasts/nestjs-aws-sqs-connector",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.js.ts",
@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/flocasts/nestjs-aws-sqs-connector.git"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
