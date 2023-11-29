@@ -2,7 +2,7 @@ import { SQS } from '@aws-sdk/client-sqs';
 export { Message } from '@aws-sdk/client-sqs';
 
 export class SqsService {
-  public static sqsClient: SQS | undefined;
+  private static sqsClient: SQS | undefined;
 
   static Configure(region: string): void {
     this.sqsClient = new SQS({ region });
