@@ -1,6 +1,6 @@
 {
   "name": "@flocasts/nestjs-aws-sqs-connector",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.js.ts",
