@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
       "module": "commonjs",
-      "lib": ["ES2015"],
-      "composite": true,
+      "composite": false,
       "declaration": true,
       "noImplicitAny": false,
       "removeComments": true,
+      "lib": ["ES2015"],
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "target": "es6",
@@ -15,6 +15,6 @@
       "skipLibCheck": true
     },
     "include": ["lib/**/*.ts"],
-    "exclude": ["README.md", "node_modules", "test", "**/*spec.ts"]
+    "exclude": ["node_modules", "test", "**/*spec.ts"]
   }
   

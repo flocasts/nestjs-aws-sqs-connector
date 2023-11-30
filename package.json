@@ -9,8 +9,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest",
-    "package": "npm pack"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
